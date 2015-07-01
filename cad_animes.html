@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Acervo</title>
+		<script src="jquery-1.11.3.min.js" type="text/javascript"> </script>
+		<script src="menu.js" type="text/javascript"> </script>
+	</head>
+<body>
+	<header><img id="logo_header" src="shield.png" alt="" />
+		<div id="menu">
+			<a href="index.html"><div class="item_menu" id="item_home">Home</div></a>
+			<a href="#" onclick="mais_filmes();"><div class="item_menu" id="item_filmes">Filmes</div></a>
+			<a href="#" onclick="mais_series();"><div class="item_menu" id="item_series">S&eacute;ries</div></a>
+			<a href="#" onclick="mais_animes();"><div class="item_menu" id="item_animes">Anime/Desenho</div></a>
+			<a href="#" onclick="mais_tokusatsus();"><div class="item_menu" id="item_tokusatsus">Tokusatsu</div></a>
+			<a href="#" onclick=""><div class="item_menu" id="item_cadastro">Cadastro</div></a>
+		</div>
+	</header>
+	<!-- DIVs SUBMENU INICIO -->
+	<div id="mae_todas_subs">
+		<div class="sub_filmes" style="display: none;">
+			<h2 class="titulo">Filmes</h2>
+			<a href="cad_filmes.html"><div class="item_cadastro">
+				Cadastrar novo Filme!
+			</div></a>
+			<a href="res_filmes.html"><div class="item_lista">
+				Ver filmes cadastrados
+			</div></a>
+		</div>
+		
+		<div class="sub_series" style="display: none;">
+			<h2 class="titulo">Séries</h2>
+			<a href="cad_animes.html"><div class="item_cadastro">
+				Cadastrar novo Série!
+			</div></a>
+			<a href="res_animes.html"><div class="item_lista">
+				Ver séries cadastradas
+			</div></a>
+		</div>
+		
+		<div class="sub_animes" style="display: none;">
+			<h2 class="titulo">Animes & Desenhos</h2>
+			<a href="cad_animes.html"><div class="item_cadastro">
+				Cadastrar novo Anime/Desenho!
+			</div></a>
+			<a href="res_animes.html"><div class="item_lista">
+				Ver animes/desenhos cadastrados
+			</div></a>
+		</div>
+		
+		<div class="sub_tokusatsus" style="display: none;">
+			<h2 class="titulo">Tokusatsus</h2>
+			<a href="cad_animes.html"><div class="item_cadastro">
+				Cadastrar novo Tokusatsu!
+			</div></a>
+			<a href="res_animes.html"><div class="item_lista">
+				Ver tokusatsus cadastrados
+			</div></a>
+		</div>
+	</div> <!-- FIM da div "mae_todas_subs"-->
+		<!-- DIVs SUBMENU FIM-->
+	<section id="main">
+		<h1 id="titulo_pagina"> Cadastro de Animes / Séries / Tokusatsus</h1>
+		<section>
+			<div id="formulario">
+			<form id="serie_anime_tokusatsu" action="cadastrar_an_tk_srs.php" method="post">
+				<div id="imagem">
+					<img src="bg_teste.jpg" alt="ilustra item" />
+				</div>
+				<!--
+					temporada
+					qtd episodios
+					lista eps
+					tipo (anime / tokusatsu / series)
+				-->
+				<label>ID:</label><br />
+				<input type="text" name="fr_id" disabled size="6"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" value="Cadastrar"/> <p></p>
+				 
+				<label>Titulo:</label><br />
+				<input type="text" name="fr_titulo" size="52" placeholder="Digite o titulo..."/> <p></p>
+				
+				<label>SubTitulo:</label><br />
+				<input type="text" name="fr_subtitulo" size="52" placeholder="Digite o subtitulo..."/> <p></p>
+				
+				<div class="alinhacampos">
+					<label>Ano Lançamento:</label><br />
+					<input type="month" name="fr_lancamento" /> <p></p>
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Temporada:</label><br />
+					<input type="text" name="fr_temporada" size="23" placeholder="Digite a temporada..." /><p></p>  
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Qtd episódios:</label> <br />
+					<input type="number" name="fr_qtd_eps" placeholder="Digite a quantidade de eps..." /><p></p>
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Genero:</label><br />
+						<select name="fr_genero">
+		                <option value="gen1">Genero 1</option>
+		                <option value="gen2">Genero 2</option>
+		            </select> <p></p>
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Idioma original:</label><br />
+					<input type="text" name="fr_idioma" size="23" placeholder="Digite o idioma original..." />
+					<p></p>
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Audio:</label><br />
+					<select name="fr_idioma">
+		                <option value="id1">Idioma</option>
+		                <option value="id2">Idioma 2</option>
+		            </select> <p></p>
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Legendado:</label><br />
+					<select name="fr_legenda">
+		                <option value="s">Sim</option>
+		                <option value="n">Não</option>
+		            </select> <p></p>
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Extensão:</label><br />
+					<select name="fr_extensao">
+		                <option value="ext1">RMVB</option>
+		                <option value="ext2">MKV</option>
+		            </select><p></p>
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Resolução:</label><br />
+					<input type="text" name="fr_resolucao" size="23" placeholder="Digite a resolução..." /><p></p>
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Tamanho: </label><br />
+					<input type="text" name="fr_tamanho" size="23" placeholder="Digite o tamanho total..." /><p></p>
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Proprietário:</label><br />
+					<input type="text" name="fr_proprietario" size="23" placeholder="Quem é o proprietário ?" /> <p></p>
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Imagem:</label><br />
+					<input type="text" name="fr_imagem"/><p></p> 
+				</div>
+				
+				<div class="alinhacampos">
+					<label>Trailer:</label><br />
+					<input type="text" name="fr_trailer" size="23" placeholder="URL do trailer..." /><p></p>
+				</div>
+				
+				<div class="alinhacampos">
+				
+				</div>
+				
+				<label>Caminho:</label><br />
+				<input type="text" name="fr_caminho" size="52" placeholder="Qual o caminho do arquivo no HD ?"/> <p></p>
+					
+				<label>Sinopse:</label><br />
+				<textarea name="fr_sinopse" rows="5" cols="53" placeholder="Qual a sinopse ?"></textarea> <p></p>
+				
+				<label>Lista de episódios:</label><br />
+				<textarea name="fr_lista_eps" rows="5" cols="53" placeholder="Insira a lista de epissódios..."></textarea>
+				<p></p>
+			</form>
+			</div><!--Final div formulário-->
+		</section>
+		<!--aside>
+			Opções<br />
+			
+				<ul class="menu_da_categoria">
+					<li><a href="#">Cadastrar novo</a></li>
+					<li><a href="#">ITENS cadastrados</a></li>
+				</ul>			
+			
+		</aside-->
+	</section>
+	<footer><p></p>
+		Acervo&reg; 2015
+	</footer>
+</body>
+</html>

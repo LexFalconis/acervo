@@ -1,0 +1,103 @@
+body{
+	margin: 0px; padding: 0px; text-align: center;
+	margin-left: auto; margin-right: auto;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; min-width:1150px;	
+}
+
+header, nav, footer, section#main, section, article {
+	display:block; border: 0px;
+}
+a:visited, a:link, a:active, a:hover{color: white;}
+/*TOPO+MENU PRINCIPAL INICIO*/
+	header{height: 189px; overflow: hidden;background: url('bg.jpg') repeat-x;}
+	
+	img#logo_header{height: 150px;margin-top:00px; opacity: 0.9;}
+	img#logo_header:hover{opacity: 1.0;}
+	
+	#menu{width: 732px; height: 37px; text-align: center;
+		/*background: violet;*/ margin-left: auto; margin-right: auto; margin-bottom: 10px;
+		}
+	#menu .item_menu{text-align: center; float: left; background-color: teal;
+		width: 120px; height: 30px; padding-top: 5px; padding-bottom: 0px;
+		margin-left: 2px;/* border-top-left-radius: 15px; border-top-right-radius: 15px;*/
+		}
+
+	/*INICIO hover dos itens menu*/
+	#item_home:hover, #item_filmes:hover, #item_series:hover, #item_animes:hover, #item_tokusatsus:hover, #item_cadastro:hover {
+		background-repeat: no-repeat; background-size: 34px;
+	}
+	#item_home:hover{background-image: url('imagens/icone_kamehouse.png');}
+	#item_filmes:hover{background-image: url('imagens/icone_capitao.png');}
+	#item_series:hover{background-image: url('imagens/icone_bazinga.png');}
+	#item_animes:hover{background-image: url('imagens/icone_radar.png');}
+	#item_tokusatsus:hover{background-image: url('imagens/icone_tokusatsus.gif');}
+	#item_cadastro:hover{background-image: url('imagens/icone_cadastro.png');}
+	/*FIM hover dos itens menu*/
+	#menu .item_menu:active{background-color: white; color: teal;}
+	div#mae_todas_subs{background-color: teal;}
+	div.sub_filmes, .sub_series, .sub_animes, .sub_tokusatsus {
+		max-width: 510px; margin-bottom: 0px; height: 60px;	margin-left: auto; margin-right: auto;
+	}
+	div.sub_filmes, div.sub_series{max-width: 400px;}
+	div.sub_animes{max-width: 560px}
+	div.sub_tokusatsus{max-width: 470px;}
+	
+	h2.titulo{margin-top: 0px; margin-bottom: 0px;}
+/*TOPO+MENU PRINCIPAL FIM*/
+
+/*MENU da CATEGORIA INICIO*/
+	div.item_cadastro, div.item_lista{max-width: 250px; /*min-width: 200px;*/ float: left;
+		height: 23px; padding-top: 5px; overflow: hidden; background-color: teal;
+	}
+	div.item_cadastro{padding-left: 28px; padding-right: 10px; border-right: 1px #000000 solid;}
+	div.item_lista{padding-right: 28px; padding-left: 10px;}
+	div.item_cadastro:hover {background-image: url('imagens/icone_inscricoes.png'); background-repeat: no-repeat; background-size: 30px;}
+	div.item_lista:hover{background-image: url('imagens/icone_lista.png'); background-repeat: no-repeat; background-size: 30px; background-position: right;}
+	div.item_cadastro:active, div.item_lista:active{background-color: white; color: teal;}
+	h1{margin: 0px; padding: 0px;}
+/*MENU da CATEGORIA FIM*/
+
+section#main {
+	width:100%; /*background-color: black;*/
+	min-width: 550px; min-height: 600px;
+}
+section {
+	width:100%; min-width: 1100px;
+}
+h1#titulo_pagina{width: 100%; height: 30px; padding-top: 5px; overflow: hidden; background-color: teal;}
+/*FORMULÁRIO INICIO*/
+	div#formulario{
+		/*background-color: yellow;*/height: 100%; overflow: hidden; padding-bottom: 10px; padding-top: 10px; 
+	}
+	form#filmes, form#serie_anime_tokusatsu{
+		text-align: left;/*margin-left: 20px;*/font-size: 10px;
+		width:1138px; margin-right: auto; margin-left: auto; margin-top: 10px;
+		height: 750px;
+	}	
+	/*#filmes */input:focus, textarea:focus{background:azure;}
+	/*#filmes */select{width: 195px;}
+	input[type="number"]{width: 191px;}
+	div#imagem{width:650px; height: 740px; background-color: teal;
+	overflow: hidden; float: left;margin: 0px 30px 30px 10px;}
+	div#imagem img{max-height: 100%; max-width: 100%;}
+/*INICIO DIV PARA ALINHAR OS CAMPOS DOS FORMULARIOS LADO-A-LADO*/
+	div.alinhacampos{float: left;margin-right: 5px; width: 200px;height: 43px;}
+/*FIM DIV PARA ALINHAR OS CAMPOS DOS FORMULARIOS LADO-A-LADO*/
+/*FORMULÁRIO FIM*/
+
+
+/*INICIO RESUMO*/
+	#tab_resumo, #tab_resumo th{border-collapse: collapse; border:1px solid #000000; margin: auto; margin-top:10px;}
+	#tab_resumo td{border-collapse: collapse; border:1px solid #000000; margin: auto;}
+	td img{width:21px;}/*imagem da tabela resumo*/
+/*FIM RESUMO*/
+
+/*INICIO RODAPÉ*/
+	footer {clear:both; width: 100%;
+	height: 150px;/*margin-bottom: 0px;padding-bottom: 0px;*/
+	position: static; margin-bottom: -100px; border-top: 1px solid #c0c0c0;
+	background-color: teal; color: white;}
+/*FIM RODAPÉ*/
+
+/*http://desenvolvimentoparaweb.com/html/html5-inputs-novos-tipos-campos/
+http://www.caelum.com.br/apostila-html-css-javascript/bootstrap-e-formularios-html5/#11-2-estilo-e-componentes-base*/

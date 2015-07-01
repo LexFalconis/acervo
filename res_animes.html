@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Acervo</title>
+		<script src="jquery-1.11.3.min.js" type="text/javascript"> </script>
+		<script src="menu.js" type="text/javascript"> </script>
+	</head>
+<body>
+	<header><img id="logo_header" src="shield.png" alt="" />
+		<div id="menu">
+			<a href="index.html"><div class="item_menu" id="item_home">Home</div></a>
+			<a href="#" onclick="mais_filmes();"><div class="item_menu" id="item_filmes">Filmes</div></a>
+			<a href="#" onclick="mais_series();"><div class="item_menu" id="item_series">S&eacute;ries</div></a>
+			<a href="#" onclick="mais_animes();"><div class="item_menu" id="item_animes">Anime/Desenho</div></a>
+			<a href="#" onclick="mais_tokusatsus();"><div class="item_menu" id="item_tokusatsus">Tokusatsu</div></a>
+			<a href="#" onclick=""><div class="item_menu" id="item_cadastro">Cadastro</div></a>
+		</div>
+	</header>
+	<!-- DIVs SUBMENU INICIO -->
+	<div id="mae_todas_subs">
+		<div class="sub_filmes" style="display: none;">
+			<h2 class="titulo">Filmes</h2>
+			<a href="cad_filmes.html"><div class="item_cadastro">
+				Cadastrar novo Filme!
+			</div></a>
+			<a href="res_filmes.html"><div class="item_lista">
+				Ver filmes cadastrados
+			</div></a>
+		</div>
+		
+		<div class="sub_series" style="display: none;">
+			<h2 class="titulo">Séries</h2>
+			<a href="cad_animes.html"><div class="item_cadastro">
+				Cadastrar novo Série!
+			</div></a>
+			<a href="res_animes.html"><div class="item_lista">
+				Ver séries cadastradas
+			</div></a>
+		</div>
+		
+		<div class="sub_animes" style="display: none;">
+			<h2 class="titulo">Animes & Desenhos</h2>
+			<a href="cad_animes.html"><div class="item_cadastro">
+				Cadastrar novo Anime/Desenho!
+			</div></a>
+			<a href="res_animes.html"><div class="item_lista">
+				Ver animes/desenhos cadastrados
+			</div></a>
+		</div>
+		
+		<div class="sub_tokusatsus" style="display: none;">
+			<h2 class="titulo">Tokusatsus</h2>
+			<a href="cad_animes.html"><div class="item_cadastro">
+				Cadastrar novo Tokusatsu!
+			</div></a>
+			<a href="res_animes.html"><div class="item_lista">
+				Ver tokusatsus cadastrados
+			</div></a>
+		</div>
+	</div> <!-- FIM da div "mae_todas_subs"-->
+		<!-- DIVs SUBMENU FIM-->
+	<section id="main">
+		<h1 id="titulo_pagina">Animes / Séries / Tokusatsus:RESUMO!</h1>
+		<section>
+			<table id="tab_resumo">
+				<thead>
+					<tr>
+						<th>Titulo</th>
+						<th>Subtitulo</th>
+						<th>Temporada</th>
+						<th>QTD eps</th>
+						<th>Audio</th>
+						<th>Extensão</th>
+						<th>Resolução</th>
+						<th>Tamanho</th>
+						<th>Detalhes</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td><img src="imagens/lupa_detalhes.jpg" alt="mais detalhes" /></td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</section>
+		<!--aside>
+			Opções<br />
+			
+				<ul class="menu_da_categoria">
+					<li><a href="#">Cadastrar novo</a></li>
+					<li><a href="#">ITENS cadastrados</a></li>
+				</ul>			
+			
+		</aside-->
+	</section>
+	<footer><p></p>
+		Acervo&reg; 2015
+	</footer>
+</body>
+</html>

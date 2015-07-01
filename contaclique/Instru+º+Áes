@@ -1,0 +1,8 @@
+Executar o bd.sql no seu phpmyadmin
+Alterar os dados das linhas de conexão dos arquivos banner.php e click.php
+Inserir algum dado no banco de dados
+Chamar via navegador o arquivo banner.php
+
+Pronto!!!
+
+Script testado e funcionando!
